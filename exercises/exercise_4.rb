@@ -18,4 +18,4 @@ for store in @mens_stores do
   puts store.name
   puts store.annual_revenue
 end
-puts Store.where("annual_revenue > 1000000").count
+puts Store.where("womens_apparel = true and annual_revenue < 1000000")
